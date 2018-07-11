@@ -1,4 +1,4 @@
-package org.silence.framework;
+package org.silence.framework.holder;
 
 import org.dom4j.Document;
 

@@ -4,9 +4,7 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.silence.framework.XmlDocumentHolder;
-
-import java.io.File;
+import org.silence.framework.holder.XmlDocumentHolder;
 
 public class XmlDocumentHolderTest {
     private XmlDocumentHolder xmlHolder;
