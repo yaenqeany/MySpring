@@ -71,7 +71,7 @@ public class ElementParserImplTest {
     public void testGetAttribute() {
         Element e = elementLoader.getBeanElement("test3");
         String value =  parser.getAttribute(e, "class");
-        assertEquals(value, "com.tear.Test5");
+        assertEquals(value, "org.silence.Test5");
     }
 
     @Test
@@ -117,7 +117,7 @@ public class ElementParserImplTest {
 
         ValueElement ve1 = (ValueElement)result.get(0);
         System.out.println(ve1.getValue());
-        assertEquals((String)ve1.getValue(),"tear");
+        assertEquals((String)ve1.getValue(),"silence");
 
         RefElement re = (RefElement)result.get(1);
         assertEquals((String)re.getValue(), "test11");
@@ -131,7 +131,7 @@ public class ElementParserImplTest {
         assertEquals(eles.size(), 4);
         System.out.println(eles.get(0).getLeafElement().getValue());
         assertEquals(eles.get(0).getName(), "property1");
-        assertEquals(eles.get(0).getLeafElement().getValue(), "tear");
+        assertEquals(eles.get(0).getLeafElement().getValue(), "silence");
         assertEquals(eles.get(0).getLeafElement().getType(), "value");
         System.out.println(eles.get(3).getLeafElement());
         System.out.println(eles.get(3).getLeafElement().getType());

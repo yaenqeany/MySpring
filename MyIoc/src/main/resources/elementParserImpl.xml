@@ -3,34 +3,34 @@
         "https://github.com/yaenqeany/MySpring/blob/master/MyIoc/src/main/java/org/silence/dtd/beans.dtd">
 <beans>
     <!-- isLazy-->
-    <bean id="test1-1" class="com.tear.Test1" lazy-init="true"></bean>
-    <bean id="test1-2" class="com.tear.Test2" lazy-init="default"></bean>
-    <bean id="test1-3" class="com.tear.Test3" lazy-init="false"></bean>
+    <bean id="test1-1" class="org.silence.Test1" lazy-init="true"></bean>
+    <bean id="test1-2" class="org.silence.Test2" lazy-init="default"></bean>
+    <bean id="test1-3" class="org.silence.Test3" lazy-init="false"></bean>
     <!-- getConstructorElements-->
-    <bean id="test2" class="com.tear.Test4">
+    <bean id="test2" class="org.silence.Test4">
         <constructor-arg>
-            <value type="java.lang.String">tear</value>
+            <value type="java.lang.String">silence</value>
         </constructor-arg>
         <constructor-arg>
             <value type="java.lang.String">1989229</value>
         </constructor-arg>
     </bean>
     <!-- getAttribute -->
-    <bean id="test3" class="com.tear.Test5"></bean>
+    <bean id="test3" class="org.silence.Test5"></bean>
     <!-- isSingleton -->
-    <bean id="test4-1" class="com.tear.Test6" singleton="false"></bean>
-    <bean id="test4-2" class="com.tear.Test7"></bean>
+    <bean id="test4-1" class="org.silence.Test6" singleton="false"></bean>
+    <bean id="test4-2" class="org.silence.Test7"></bean>
     <!-- getConstructorArgs -->
-    <bean id="test5" class="com.tear.Test8">
+    <bean id="test5" class="org.silence.Test8">
         <constructor-arg>
-            <value type="java.lang.String">wstear</value>
+            <value type="java.lang.String">wsSilence</value>
         </constructor-arg>
         <constructor-arg>
             <value type="java.lang.String">1989229</value>
         </constructor-arg>
     </bean>
     <!-- getPropertyElements-->
-    <bean id="test6" class="com.tear.Test9">
+    <bean id="test6" class="org.silence.Test9">
         <property name="test1">
             <ref bean="test1"/>
         </property>
@@ -39,16 +39,16 @@
         </property>
     </bean>
     <!-- getPropertyValues -->
-    <bean id="test7" class="com.tear.Test10">
+    <bean id="test7" class="org.silence.Test10">
         <property name="test1">
-            <value type="java.lang.String">wstear</value>
+            <value type="java.lang.String">wsSilence</value>
         </property>
         <property name="test2">
             <value type="java.lang.String">1989229</value>
         </property>
     </bean>
     <!-- getPropertyRef -->
-    <bean id="test8" class="com.tear.Test11">
+    <bean id="test8" class="org.silence.Test11">
         <property name="test1">
             <ref bean="test1"/>
         </property>
@@ -58,7 +58,7 @@
     </bean>
 
     <!-- getConstructorRef-->
-    <bean id="test9" class="com.tear.Test12">
+    <bean id="test9" class="org.silence.Test12">
         <constructor-arg>
             <ref bean="test1"/>
         </constructor-arg>
@@ -68,15 +68,15 @@
     </bean>
 
     <!-- isAutowire -->
-    <bean id="test10-1" class="com.tear.Test13" autowire="byName">
+    <bean id="test10-1" class="org.silence.Test13" autowire="byName">
     </bean>
-    <bean id="test10-2" class="com.tear.Test14" autowire="no">
+    <bean id="test10-2" class="org.silence.Test14" autowire="no">
     </bean>
-    <bean id="test10-3" class="com.tear.Test15" autowire="default">
+    <bean id="test10-3" class="org.silence.Test15" autowire="default">
     </bean>
-    <bean id="test11" class="com.tear.Test11">
+    <bean id="test11" class="org.silence.Test11">
         <constructor-arg>
-            <value type="java.lang.String">tear</value>
+            <value type="java.lang.String">silence</value>
         </constructor-arg>
         <constructor-arg>
             <ref bean="test11"/>
@@ -85,9 +85,9 @@
 
 
     <!-- getPropertyValue -->
-    <bean id="test12" class="com.tear.Test17">
+    <bean id="test12" class="org.silence.Test17">
         <property name="property1">
-            <value type="java.lang.String">tear</value>
+            <value type="java.lang.String">silence</value>
         </property>
         <property name="property2">
             <ref bean="test13"/>
@@ -98,9 +98,9 @@
         <property name="property4">
             <collection type="list">
                 <value type="java.lang.Integer">1212</value>
-                <value type="java.lang.String">tear</value>
+                <value type="java.lang.String">silence</value>
             </collection>
         </property>
     </bean>
-    <bean class="com.tear.Test18" id="test13"></bean>
+    <bean class="org.silence.Test18" id="test13"></bean>
 </beans>
