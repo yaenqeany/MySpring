@@ -58,6 +58,7 @@ public class XmlDocumentHolder implements DocumentHolder {
                  * new一个带dtd验证的SaxReader对象
                  */
                 SAXReader reader = new SAXReader(true);
+//                SAXReader reader = new SAXReader();
                 /**
                  * 设置用来验证的dtd的输入源
                  */
@@ -66,7 +67,7 @@ public class XmlDocumentHolder implements DocumentHolder {
                 /**
                  * 根据xml的路径读取出Document对象
                  */
-                Document document = reader.read(xmlFile);
+                Document document = reader.read(xmlFile.getAbsolutePath());
                 return document;
             } catch (Exception e) {
                 e.printStackTrace();

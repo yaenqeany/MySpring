@@ -13,8 +13,11 @@ public class XmlEntityResolver implements EntityResolver {
 
     @Override
     public InputSource resolveEntity(String publicId, String systemId) throws SAXException, IOException {
-        InputStream stream = new FileInputStream(new File(""));
-        return new InputSource(stream);
+        if ("-//SILENCE//DTD BEAN//CN".equals(publicId) && "https://github.com/yaenqeany/MySpring/blob/master/MyIoc/src/main/java/org/silence/dtd/beans.dtd".equals(systemId)) {
+            InputStream stream = new FileInputStream(new File("src/main/java/org/silence/dtd/beans.dtd"));
+            return new InputSource(stream);
+        }
+        return null;
     }
 
 }

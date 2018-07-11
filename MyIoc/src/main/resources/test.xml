@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SILENCE//DTD BEAN//CN"
+        "https://github.com/yaenqeany/MySpring/blob/master/MyIoc/src/main/java/org/silence/dtd/beans.dtd">
+<beans>
+    <bean id="test" class="test"></bean>
+</beans>

@@ -6,6 +6,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.silence.framework.XmlDocumentHolder;
 
+import java.io.File;
+
 public class XmlDocumentHolderTest {
     private XmlDocumentHolder xmlHolder;
 
@@ -22,7 +24,7 @@ public class XmlDocumentHolderTest {
     //测试正常情况
     @Test
     public void testGetDocument1() {
-        String filePath = "C:\\git\\repository\\Spring\\MySpring\\MyIoc\\src\\main\\resources\\application.xml";
+        String filePath = "src/main/resources/test.xml";//相对路径是指相对当前module的路径
         //获得Document对象
         Document doc1 = xmlHolder.getDocument(filePath);
         //看是否为空，为空测试失败
